@@ -11,30 +11,43 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: #fafafa;
-  color: rgba(var(--i1d, 38, 38, 38), 1);
+  background-color: rgb(243, 243, 243);
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
 }
 
+.container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 32px auto 0;
+  max-width: 935px;
+  padding-bottom: 32px;
+  width: 100%;
+}
+
 .main-page {
-  display: flex;
+  display: -webkit-inline-box;
   align-items: center;
   justify-content: start;
-  /* width: 60%;
-  height: 100vh; */
   margin-top: 2.3em;
+  width: 100%;
   padding: 5em;
 }
 
 .container-phone {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: 50%; */
   margin-right: 3rem;
 }
 
@@ -43,15 +56,18 @@ body {
 }
 
 .container-login {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  border: 1px solid #dadada;
-  height: 30vh;
-  width: 50vh;
-  text-align: center;
-  align-items: center;
+  color: #262626;
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  margin-top: 12px;
+  max-width: 350px;
 }
 
 .cards {
@@ -112,7 +128,7 @@ body {
 }
 
 .get-the-app {
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -120,7 +136,10 @@ body {
   padding: 1.3rem 0;
 }
 
-.get-app {
+.get-the-app p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: black;
   font-size: 16px;
   font-weight: 600;
@@ -132,6 +151,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
+  gap: 1em
 }
 
 .app-download {
@@ -164,6 +184,7 @@ body {
 
 .main-footer ul li {
   margin-right: 1em;
+  margin-bottom: 0.5rem;
 }
 
 .main-footer ul li a {
@@ -174,20 +195,12 @@ body {
 .main-footer .copyright {
   display: flex;
   justify-content: center;
+  height: 20px;
 }
 
 .copyright p {
-  display: flex;
-  flex-direction: row;
-  font-size: 12px;
-  color: #8e8e8e;
-  margin-left: 1.2em;
-}
-
-.copyright img {
-  width: 25px;
-  height: 25px;
-  color: green;
+  padding-left: 10px;
+  margin-bottom: 15px;
 }
 
 /* media queries */
